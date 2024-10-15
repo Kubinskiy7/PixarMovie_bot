@@ -7,7 +7,7 @@ A minimalistic web app that lists all Pixar projects, including short films, wit
 ## Demo
 
 You can view the live demo of the project on GitHub Pages:
-[Pixar Projects Web App](https://your-username.github.io/pixar-projects/)
+[Pixar Projects Web App](https://github.com/Kubinskiy7/PixarMovie_bot)
 
 ## Features
 
@@ -26,16 +26,16 @@ To run this project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/pixar-projects.git
+   git clone https://github.com/Kubinskiy7/PixarMovie_bot.git
 
-	2.	Open the index.html file in your browser:
+2.	Open the index.html file in your browser:
 
-open index.html
+   open index.html
 
 
-	3.	Optionally, you can serve the project using a simple HTTP server:
+3.	Optionally, you can serve the project using a simple HTTP server:
 
-python -m http.server
+   python -m http.server
 
 
 
@@ -49,7 +49,7 @@ This project is integrated with Telegram Web Apps (TWA). To use it with your bot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 markup = InlineKeyboardMarkup()
-web_app_button = InlineKeyboardButton(text="Open Pixar Projects", web_app={'url': 'https://your-username.github.io/pixar-projects/'})
+web_app_button = InlineKeyboardButton(text="Open Pixar Projects", web_app={'url': 'https://github.com/Kubinskiy7/PixarMovie_bot'})
 markup.add(web_app_button)
 bot.send_message(chat_id, "Click the button to view Pixar projects:", reply_markup=markup)
 
