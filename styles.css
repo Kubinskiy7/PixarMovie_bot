@@ -1,14 +1,16 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    background-color: #ff5733;
-    color: white;
+    background-color: var(--header-background);
+    color: var(--header-text);
     padding: 20px;
     text-align: center;
 }
@@ -18,25 +20,31 @@ h1 {
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
-.movies-list {
+.movie-section {
+    margin-bottom: 40px;
+}
+
+.movie-section h2 {
+    margin-bottom: 10px;
+}
+
+.movie-carousel {
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
     gap: 20px;
+    padding-bottom: 10px;
 }
 
 .movie {
-    background-color: white;
-    border: 1px solid #ccc;
+    min-width: 200px;
+    background-color: var(--movie-background);
     border-radius: 10px;
-    width: 30%;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.2s;
 }
 
 .movie img {
@@ -44,15 +52,32 @@ main {
     border-radius: 10px;
 }
 
-.movie h2 {
+.movie h3 {
     margin: 10px 0;
 }
 
 .movie a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
 }
 
-.movie p {
-    margin: 5px 0;
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Темы */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-background: #ff5733;
+    --header-text: white;
+    --movie-background: white;
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #f4f4f4;
+    --header-background: #333;
+    --header-text: #ff5733;
+    --movie-background: #1e1e1e;
 }
