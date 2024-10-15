@@ -4,81 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixar Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #ff6f00;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .movie {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .movie h2 {
-            color: #ff6f00;
-        }
-        .movie p {
-            margin: 5px 0;
-        }
-        .movie a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .movie a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Pixar Projects</h1>
-    <div class="container" id="movieList"></div>
+    <header>
+        <h1>Pixar Projects</h1>
+    </header>
+    <main>
+        <section class="movies-list">
+            <!-- Первый проект -->
+            <article class="movie">
+                <img src="images/toy-story.jpg" alt="Toy Story Poster">
+                <h2><a href="toy_story_(1995).html">Toy Story (1995)</a></h2>
+                <p>Director: John Lasseter</p>
+                <p>IMDb: 8.3 | Rotten Tomatoes: 100%</p>
+            </article>
 
-    <script>
-        const movies = [
-            {
-                name: "Toy Story",
-                year: 1995,
-                director: "John Lasseter",
-                url: "https://rezka.ag/animation/adventure/1-toy-story-1995.html"
-            },
-            {
-                name: "Finding Nemo",
-                year: 2003,
-                director: "Andrew Stanton",
-                url: "https://rezka.ag/animation/adventure/5678-finding-nemo-2003.html"
-            }
-            // Добавь другие фильмы Pixar
-        ];
+            <!-- Второй проект -->
+            <article class="movie">
+                <img src="images/finding_nemo_(2003).jpg" alt="Finding Nemo Poster">
+                <h2><a href="finding-nemo.html">Finding Nemo (2003)</a></h2>
+                <p>Directors: Andrew Stanton, Lee Unkrich</p>
+                <p>IMDb: 8.1 | Rotten Tomatoes: 99%</p>
+            </article>
 
-        const container = document.getElementById("movieList");
-
-        movies.forEach(movie => {
-            const movieDiv = document.createElement("div");
-            movieDiv.classList.add("movie");
-            movieDiv.innerHTML = `
-                <h2>${movie.name} (${movie.year})</h2>
-                <p>Director: ${movie.director}</p>
-                <p><a href="${movie.url}" target="_blank">Watch on rezka.ag</a></p>
-            `;
-            container.appendChild(movieDiv);
-        });
-
-        // Инициализация Telegram Web App
-        const tg = window.Telegram.WebApp;
-        tg.ready();
-    </script>
+            <!-- Третий проект -->
+            <article class="movie">
+                <img src="images/up_(2009).jpg" alt="Up Poster">
+                <h2><a href="up.html">Up (2009)</a></h2>
+                <p>Directors: Pete Docter, Bob Peterson</p>
+                <p>IMDb: 8.2 | Rotten Tomatoes: 98%</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
