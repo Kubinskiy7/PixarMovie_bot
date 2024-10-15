@@ -1,5 +1,3 @@
-Пример README для твоего проекта:
-
 # Pixar Projects Web App
 
 A minimalistic web app that lists all Pixar projects, including short films, with the release year, director, and links to watch them on **rezka.ag**.
