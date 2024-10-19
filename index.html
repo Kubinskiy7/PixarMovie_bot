@@ -1,176 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixar Projects Timeline</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #007BFF;
-            color: #fff;
-            overflow-x: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .timeline-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .timeline {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            padding: 20px;
-            height: 100%;
-        }
-
-        .timeline::-webkit-scrollbar {
-            display: none; /* Скрыть полосу прокрутки */
-        }
-
-        h1 {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 64px;
-            color: white;
-            z-index: 999;
-        }
-
-        .year {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 100px;
-            flex-shrink: 0;
-        }
-
-        .year::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: white; /* Белая ветка */
-            transform: translateY(-50%);
-        }
-
-        .year h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            position: fixed; /* Закрепляем дату */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .movie-group {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: relative;
-        }
-
-        .movie {
-            text-align: center;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .movie img {
-            width: 150px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        .movie p {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        .branch {
-            position: absolute;
-            top: 50%;
-            width: 100px;
-            height: 2px;
-            background-color: white; /* Линия, которая соединяет проект и центральную ветку */
-        }
-
-        /* Чередование фильмов сверху и снизу */
-        .top {
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-
-        .bottom {
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixar Projects</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="timeline-container">
-        <h1>Pixar</h1>
-        <div class="timeline">
-            <!-- Ветка 1995 -->
-            <div class="year">
-                <h2>1995</h2>
-                <div class="movie-group top">
-                    <div class="movie">
-                        <div class="branch"></div>
-                        <img src="images/Toy_Story_(1995).jpg" alt="Toy Story">
-                        <p>Toy Story</p>
-                        <p>(1995)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ветка 1998 -->
-            <div class="year">
-                <h2>1998</h2>
-                <div class="movie-group bottom">
-                    <div class="movie">
-                        <div class="branch"></div>
-                        <img src="images/A_Bug's_Life_(1998).jpg" alt="A Bug's Life">
-                        <p>A Bug's Life</p>
-                        <p>(1998)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Ветка 1999 -->
-            <div class="year">
-                <h2>1999</h2>
-                <div class="movie-group top">
-                    <div class="movie">
-                        <div class="branch"></div>
-                        <img src="images/Toy_Story_2_(1999).jpg" alt="Toy Story 2">
-                        <p>Toy Story 2</p>
-                        <p>(1999)</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Добавляй остальные проекты здесь по аналогии -->
+  <div class="container">
+    <h1>Pixar</h1>
+    
+    <div class="timeline">
+      <div class="line"></div>
+      
+      <!-- Первый проект (сверху) -->
+      <div class="project-container top">
+        <div class="project">
+          <div class="year">1995</div>
+          <img src="images/Toy_Story_(1995).jpg" alt="Toy Story" class="poster">
+          <div class="project-title">Toy Story (1995)</div>
         </div>
+      </div>
+
+      <!-- Второй проект (снизу) -->
+      <div class="project-container bottom">
+        <div class="project">
+          <div class="year">1998</div>
+          <img src="images/A_Bug's_Life_(1998).jpg" alt="A Bug's Life" class="poster">
+          <div class="project-title">A Bug's Life (1998)</div>
+        </div>
+      </div>
+
+      <!-- Следующие проекты -->
+      <!-- Здесь можно добавить другие проекты, поочередно сверху и снизу -->
+      
     </div>
+  </div>
 </body>
 </html>
