@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты Pixar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Проекты Pixar</h1>
+
+        <!-- Лента Полнометражные фильмы -->
+        <h2>Полнометражные фильмы</h2>
+        <div class="movie-carousel">
+            <div class="movie">
+                <img src="images/Toy_Story_(1995).jpg" alt="Toy Story">
+                <p>Toy Story (1995)</p>
+            </div>
+            <div class="movie">
+                <img src="images/A_Bug's_Life_(1998).jpg" alt="A Bug's Life">
+                <p>A Bug's Life (1998)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Toy_Story_2_(1999).jpg" alt="Toy Story 2">
+                <p>Toy Story 2 (1999)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Monsters,_Inc._(2001).jpg" alt="Monsters, Inc.">
+                <p>Monsters, Inc. (2001)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Finding_Nemo_(2003).jpg" alt="Finding Nemo">
+                <p>Finding Nemo (2003)</p>
+            </div>
+            <div class="movie">
+                <img src="images/The_Incredibles_(2004).jpg" alt="The Incredibles">
+                <p>The Incredibles (2004)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Cars_(2006).jpg" alt="Cars">
+                <p>Cars (2006)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Ratatouille_(2007).jpg" alt="Ratatouille">
+                <p>Ratatouille (2007)</p>
+            </div>
+            <div class="movie">
+                <img src="images/WALL·E_(2008).jpg" alt="WALL·E">
+                <p>WALL·E (2008)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Up_(2009).jpg" alt="Up">
+                <p>Up (2009)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Toy_Story_3_(2010).jpg" alt="Toy Story 3">
+                <p>Toy Story 3 (2010)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Cars_2_(2011).jpg" alt="Cars 2">
+                <p>Cars 2 (2011)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Brave_(2012).jpg" alt="Brave">
+                <p>Brave (2012)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Monsters_University_(2013).jpg" alt="Monsters University">
+                <p>Monsters University (2013)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Inside_Out_(2015).jpg" alt="Inside Out">
+                <p>Inside Out (2015)</p>
+            </div>
+            <div class="movie">
+                <img src="images/The_Good_Dinosaur_(2015).jpg" alt="The Good Dinosaur">
+                <p>The Good Dinosaur (2015)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Finding_Dory_(2016).jpg" alt="Finding Dory">
+                <p>Finding Dory (2016)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Cars_3_(2017).jpg" alt="Cars 3">
+                <p>Cars 3 (2017)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Coco_(2017).jpg" alt="Coco">
+                <p>Coco (2017)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Incredibles_2_(2018).jpg" alt="Incredibles 2">
+                <p>Incredibles 2 (2018)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Toy_Story_4_(2019).jpg" alt="Toy Story 4">
+                <p>Toy Story 4 (2019)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Onward_(2020).jpg" alt="Onward">
+                <p>Onward (2020)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Soul_(2020).jpg" alt="Soul">
+                <p>Soul (2020)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Luca_(2021).jpg" alt="Luca">
+                <p>Luca (2021)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Turning_Red_(2022).jpg" alt="Turning Red">
+                <p>Turning Red (2022)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Lightyear_(2022).jpg" alt="Lightyear">
+                <p>Lightyear (2022)</p>
+            </div>
+            <div class="movie">
+                <img src="images/Elemental_(2023).jpg" alt="Elemental">
+                <p>Elemental (2023)</p>
+            </div>
+        </div>
+
+        <!-- Лента Короткометражные фильмы -->
+        <h2>Короткометражные фильмы</h2>
+        <div class="movie-carousel">
+            <!-- Добавь свои короткометражные фильмы тут -->
+        </div>
+
+        <!-- Лента Сериалы -->
+        <h2>Сериалы</h2>
+        <div class="movie-carousel">
+            <!-- Добавь свои сериалы тут -->
+        </div>
+
+        <!-- Лента Франшиза "Истории Игрушек" -->
+        <h2>Франшиза "Истории Игрушек"</h2>
+        <div class="movie-carousel">
+            <!-- Добавь фильмы франшизы "Истории Игрушек" тут -->
+        </div>
+
+        <!-- Лента Франшиза "Суперсемейка" -->
+        <h2>Франшиза "Суперсемейка"</h2>
+        <div class="movie-carousel">
+            <!-- Добавь фильмы франшизы "Суперсемейка" тут -->
+        </div>
+
+    </div>
+</body>
+</html>
