@@ -1,0 +1,83 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.movie-section {
+    margin-bottom: 40px;
+}
+
+.movie-section h2 {
+    margin-bottom: 10px;
+}
+
+.movie-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.movie {
+    min-width: 200px;
+    background-color: var(--movie-background);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.movie img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie h3 {
+    margin: 10px 0;
+}
+
+.movie a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+/* Темы */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-background: #ff5733;
+    --header-text: white;
+    --movie-background: white;
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: #f4f4f4;
+    --header-background: #333;
+    --header-text: #ff5733;
+    --movie-background: #1e1e1e;
+}
