@@ -9,13 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #007BFF;
+            background: url('your-background-image.jpg') no-repeat center center fixed; /* Добавляем красивый фон */
+            background-size: cover;
             color: #fff;
-            overflow: hidden; /* Убираем вертикальный скролл */
+            overflow-x: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Высота страницы 100% от окна */
+            height: 100vh;
         }
 
         .timeline-container {
@@ -39,38 +40,56 @@
             display: none; /* Скрыть полосу прокрутки */
         }
 
-        .timeline h1 {
+        h1 {
             position: fixed;
-            top: 10px;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-            font-size: 48px;
+            transform: translate(-50%, -50%);
+            font-size: 64px;
             color: white;
             z-index: 999;
         }
 
         .year {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 0 50px;
+            margin: 0 100px;
             flex-shrink: 0;
+        }
+
+        .year::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: white; /* Белая ветка */
+            transform: translateY(-50%);
         }
 
         .year h2 {
             font-size: 36px;
             margin-bottom: 20px;
+            position: fixed; /* Закрепляем дату */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .movie-group {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
         }
 
         .movie {
             text-align: center;
             margin-bottom: 40px;
+            position: relative;
         }
 
         .movie img {
@@ -85,6 +104,27 @@
             margin: 0;
             font-size: 16px;
         }
+
+        .branch {
+            position: absolute;
+            top: 50%;
+            width: 100px;
+            height: 2px;
+            background-color: white; /* Линия, которая соединяет проект и центральную ветку */
+        }
+
+        /* Чередование фильмов сверху и снизу */
+        .top {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .bottom {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -94,8 +134,9 @@
             <!-- Ветка 1995 -->
             <div class="year">
                 <h2>1995</h2>
-                <div class="movie-group">
+                <div class="movie-group top">
                     <div class="movie">
+                        <div class="branch"></div>
                         <img src="images/Toy_Story_(1995).jpg" alt="Toy Story">
                         <p>Toy Story</p>
                         <p>(1995)</p>
@@ -106,8 +147,9 @@
             <!-- Ветка 1998 -->
             <div class="year">
                 <h2>1998</h2>
-                <div class="movie-group">
+                <div class="movie-group bottom">
                     <div class="movie">
+                        <div class="branch"></div>
                         <img src="images/A_Bug's_Life_(1998).jpg" alt="A Bug's Life">
                         <p>A Bug's Life</p>
                         <p>(1998)</p>
@@ -118,8 +160,9 @@
             <!-- Ветка 1999 -->
             <div class="year">
                 <h2>1999</h2>
-                <div class="movie-group">
+                <div class="movie-group top">
                     <div class="movie">
+                        <div class="branch"></div>
                         <img src="images/Toy_Story_2_(1999).jpg" alt="Toy Story 2">
                         <p>Toy Story 2</p>
                         <p>(1999)</p>
